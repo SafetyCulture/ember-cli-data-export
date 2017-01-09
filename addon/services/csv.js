@@ -81,7 +81,7 @@ export default Ember.Service.extend({
 
     var csv = JSON2CSV(data);
 
-    saveAs(new Blob([csv],{type:"data:text/csv;charset=utf-8"}), options.fileName);
+    saveAs(new Blob([csv],{type:"text/csv;charset=utf-8"}), options.fileName);
 
   }
 
